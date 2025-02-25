@@ -1,0 +1,18 @@
+- clone repo
+- run: npm instal
+- run : npm run dev
+
+- Create Clerk auth account (https://dashboard.clerk.com/sign-in?redirect_url=https%3A%2F%2Fdashboard.clerk.com%2F)
+- Create Neon DB account (https://neon.tech/)
+
+- change env variables in .env file
+
+- add in .env file: 
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=....
+    CLERK_SECRET_KEY=.....
+    NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/auth/callback
+    NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/auth/callback    
+
+    DATABASE_URL="postgresql://neondb_owner:...."
+
+    
