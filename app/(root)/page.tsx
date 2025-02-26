@@ -9,7 +9,7 @@ export default function Home() {
         </div>
         <div className="w-[10%] h-full flex justify-center items-center">
           <Link
-            href={"/articles"}
+            href={"/dashboard"}
             className="text-slate-700 font-light text-lg"
           >
             Login
@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[90%] flex justify-center items-center">
-        <p className="text-slate-800 font-bold text-3xl">
+        <p className="text-slate-800 font-bold text-5xl">
           Welcom to our Blog app
         </p>
       </div>

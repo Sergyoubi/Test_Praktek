@@ -8,7 +8,7 @@ const AuthCallbackPage = async (props: Props) => {
   const auth = await onAuthenticateUser();
 
   if (auth.status === 200 || auth.status === 201) {
-    return redirect(`/articles}`);
+    return redirect(`/dashboard}`);
   }
   if (auth.status === 400 || auth.status === 403 || auth.status === 500) {
     return redirect("/auth/sign-in");

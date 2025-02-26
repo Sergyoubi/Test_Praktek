@@ -27,9 +27,11 @@ export const onAuthenticateUser = async () => {
         lastname: user.lastName,
       },
     });
+
     if (newUser) {
       return { status: 201, user: newUser };
     }
+
     return { status: 400, error: "Error creating user" };
   } catch (error) {
     return {
